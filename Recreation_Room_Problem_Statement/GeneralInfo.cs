@@ -81,6 +81,8 @@ Enter M for Male and F for Female");
                         if (Genders[i].ToUpper() != firstGender.ToUpper())
                         {
                             message = "Both Male and Female Cannot be in Recreation Room";
+                            this.Genders.RemoveAt(i);
+                            this.Members.RemoveAt(i);
                         }
                     }
                 }

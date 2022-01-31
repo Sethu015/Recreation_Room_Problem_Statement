@@ -15,6 +15,10 @@ namespace Recreation_Room_Problem_Statement
                 if (!string.IsNullOrWhiteSpace(message))
                 {
                     Console.WriteLine(message);
+                    if (generalInfo.Genders.Count<3)
+                    {
+                        continue;
+                    }
                     break;
                 }
             }
